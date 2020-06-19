@@ -6,6 +6,8 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
+
+    redirect_to login_path
   end
 
   private
