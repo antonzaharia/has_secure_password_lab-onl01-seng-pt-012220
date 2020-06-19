@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-    raise inspect.params
     @user = User.find_by(name: params[:user][:name])
   end
 end
