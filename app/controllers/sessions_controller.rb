@@ -9,5 +9,6 @@ class SessionsController < ApplicationController
       session[:user_id] = @user.id
     else
       redirect_to login_path, alert: "Wrong Password"
+    end
   end
 end
